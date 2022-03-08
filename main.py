@@ -8,7 +8,4 @@ app = Flask(__name__)
 def home():
     return "Hello"
 
-
-# Je finis ensuite par lancer mon application en local
-if __name__ == "__main__":
-    app.run(debug=True)
+app.run()
