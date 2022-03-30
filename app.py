@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template
 
 # on instancie un objet Flask qui est notre application
 app = Flask(__name__)
@@ -6,6 +6,6 @@ app = Flask(__name__)
 # On définit notre première vue
 @app.route("/")
 def home():
-    return "Hello"
+    return render_template('index.html')
 
-app.run(host='0.0.0.0:8000')
+app.run()
