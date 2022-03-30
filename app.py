@@ -8,4 +8,4 @@ app = Flask(__name__)
 def home():
     return "Hello"
 
-app.run(debug=True)
+app.run(host='0.0.0.0:8000')
